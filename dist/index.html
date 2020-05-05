@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Frontend Mentor | Bookmark landing page</title>
+</head>
+
+<body>
+
+  <nav class="wrapper flex-box">
+    <img class="logo" src="images/logo-bookmark.svg" alt="">
+    <img class="show-sm btn" src="images/icon-hamburger.svg" id="open-menu" alt="">
+    <img class="hide-originally btn" src="images/icon-close.svg" id="close-menu" alt="">
+    <ul class="hide-sm nav-links">
+      <li><a>Features</a></li>
+      <li><a>Pricing</a></li>
+      <li><a>Contact</a></li>
+      <li><a>Login</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!------------------------HERO SECTION ---------------------------------->
+    <section class="hero py-2">
+      <div class="hero-image">
+        <img class="hero-image-image" src="images/illustration-hero.svg" alt="">
+      </div>
+      <div class="hero-intro p-2">
+        <h1 class="heading-text my-1 large"> A Simple Bookmark Manager</h1>
+        <p class="my-1 lh-2"> A clean and simple interface to organize your favourite websites. Open a new 
+          browser tab and see your sites load instantly. Try it for free.</p>
+        <div class="hero-btn my-1">
+          <button class="btn btn-primary-blue">Get it on Chrome </button>
+          <button class="btn btn-light"> Get it on Firefox </button>
+        </div>
+      </div>
+    </section>
+
+    <!-----------------------------------FEATURE SECTION------------------------->
+    <section class="features py-2">
+      <div class="wrapper-narrow">
+      <h1 class="lead heading-text my-2"> Features </h1>
+      <p class="my-1 lh-3">Our aim is to make it quick and easy for you to access your favourite websites. 
+        Your bookmarks sync between your devices so you can access them on the go.</p>
+      
+        <div class="feature-links p-1">
+          <ul>
+            <li><a>Simple Bookmarking</a></li>
+            <li><a>Speedy Searching</a></li>
+            <li><a>Easy Sharing</a></li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="feature py-1">
+          <div class="feature-image py-2">
+            <img id="feature-image" src="images/illustration-features-tab-1.svg" alt="">
+          </div>
+          <div class="feature-text p-2">
+            <h1 id="feature-head" class="heading-text lead my-1">   Bookmark in one click</h1>
+            <p id="feature-description" class="my-1 lh-2">  Organize your bookmarks however you like. Our simple drag-and-drop interface 
+              gives you complete control over how you manage your favourite sites.</p>
+          </div>
+        </div>
+    </section>
+
+    <!---------------------------------------DOWNLOAD SECTION ------------------------------->
+
+    <section class="download-section py-1">
+      <div class="section-title p-2">
+        <h1 class="heading-text lead">  Download the extension</h1>
+        <p class="my-1 lh-2"> We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+          got a favourite you’d like us to prioritize.</p>
+      </div>
+
+      <div class="download my-2 py-1">
+        <img class="my-1" src="images/logo-chrome.svg" alt="">
+        <h1 class="lead heading-text">Add to Chrome</h1>
+        <p class="my-1">  Minimum version 62 </p>
+        <img src="images/bg-dots.svg" alt="">
+        <button class="btn btn-primary-blue my-1">  Add & Install Extension</button>
+      </div>
+    
+      <div class="download my-2 py-1">
+        <img class="my-1" src="images/logo-firefox.svg" alt="">
+        <h1 class="lead heading-text"> Add to Firefox</h1>
+        <p class="my-1">  Minimum version 55 </p>
+        <img src="images/bg-dots.svg" alt="">
+        <button class="btn btn-primary-blue my-1">  Add & Install Extension</button>
+      </div>
+
+      <div class="download my-2 py-1">
+        <img class="my-1" src="images/logo-opera.svg" alt="">
+        <h1 class="lead heading-text"> Add to Opera</h1>
+        <p class="my-1">Minimum version 46 </p>
+        <img src="images/bg-dots.svg" alt="">
+        <button class="btn btn-primary-blue my-1"> Add & Install Extension</button>
+      </div>
+    </section>
+
+    <!---------------------------------------FAQ SECTION--------------------------------->
+    <section class="faq py-2">
+      <div class="section-title p-2">
+        <h1 class="heading-text lead my-1">Frequently Asked Questions</h1>
+        <p class="lh-2">  Here are some of our FAQs. If you have any other questions you’d like 
+          answered please feel free to email us. </p>
+      </div>
+      <div class="questions p-2">
+        <div class="faq-card">
+          <input type="checkbox" id="q1" name="toggleFAQ">
+          <div class="faq-card-question">
+            <h1 class="heading-text title">What is Bookmark?</h1>
+            <label id="q1-btn" for="q1"><img src="images/icon-arrow.svg" alt=""></label> 
+          </div>
+          <div class="faq-card-answer align-left">
+            <p class="lh-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+          </div>
+        </div>
+        <div class="faq-card">
+          <input type="checkbox" id="q2" name="toggleFAQ">
+          <div class="faq-card-question">
+            <h1 class="heading-text title">  How can I request a new browser?</h1>
+            <label id="q2-btn" for="q2"><img src="images/icon-arrow.svg" alt=""></label> 
+          </div>
+          <div class="faq-card-answer py-1 align-left">
+            <p class="lh-2">   Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+          </div>
+        </div>
+        <div class="faq-card">
+          <input type="checkbox" id="q3" name="toggleFAQ">
+          <div class="faq-card-question">
+            <h1 class="heading-text title"> Is there a mobile app?</h1>
+            <label id="q3-btn" for="q3"><img src="images/icon-arrow.svg" alt=""></label> 
+          </div>
+          <div class="faq-card-answer align-left">
+            <p class="lh-2">   Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+              sollicitudin ex et ultricies bibendum.</p>
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <input type="checkbox" id="q4" name="toggleFAQ">
+          <div class="faq-card-question">
+            <h1 class="heading-text title">   What about other Chromium browsers?</h1>
+            <label id="q4-btn" for="q4"><img src="images/icon-arrow.svg" alt=""></label> 
+          </div>
+          <div class="faq-card-answer align-left">
+            <p class="lh-2">  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+              vitae neque eget nisl gravida pellentesque non ut velit.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary-blue"> More Info</button>
+    </section>
+
+    <!---------------------------------------JOIN US---------------------------------------->
+
+    <section class="join-us p-2">
+      <div class="section-title my-1">
+        <h3 class="emphasis my-1"> 35,000+ already joined</h3>
+        <h1 class="large my-1"> Stay up-to-date with what we’re doing</h1>
+      </div>
+      <input class="email-field my-1" name="email" type="email">
+      <button class="btn btn-primary-red"> Contact Us</button>
+    </section>
+
+  </main>
+<!------------------------------------FOOTER --------------------------------->
+  <footer class="py-3">
+    <img src="images/logo-bookmark_white.svg">
+    <ul class="footer-nav-links">
+      <li> <a>Features</a></li>
+      <li><a> Pricing</a></li>
+      <li><a>Contact</a></li>
+    </ul>
+  </footer>
+  <div>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Irene K</a>.
+    </p>
+  </div>
+</body>
+</html>

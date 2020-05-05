@@ -1,0 +1,25 @@
+.hero{
+    &-image{
+        position:relative;
+        z-index:1;
+
+        img{
+            width:100%;
+        }
+    
+        &:after{
+            position:absolute;
+            content:"";
+            width: 80%;
+            height: 65%;
+            background: $primary-blue;
+            border-radius: 40px 0 0 40px;
+            right:0;
+            bottom:1rem;
+            z-index:-1;
+        }
+    }
+    &-intro{
+        text-align:center;
+    }
+}

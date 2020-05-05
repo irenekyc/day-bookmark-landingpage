@@ -1,0 +1,50 @@
+
+//FAQ Section
+.faq{
+    text-align:center;
+
+    &-card{
+        input{
+            visibility:hidden;
+        }
+       
+        border-bottom: 1px solid #cccccc;
+        &-question{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            height:40px;
+        }
+        &-answer{
+            width:100%;
+            transition:2s;
+            height:0;
+            display:none;
+        }
+        #q1:checked ~.faq-card-answer,
+        #q2:checked ~.faq-card-answer,
+        #q3:checked ~.faq-card-answer,
+        #q4:checked ~.faq-card-answer{
+            display:block;
+            animation: dropdown 2s ease-in-out forwards;
+        }
+
+        }
+    }
+@keyframes dropdown{
+    0% {
+        height:0;
+        opacity:0;
+       
+    }
+    50% {
+        height:50%;
+        opacity:0.8;
+    }
+    100%{
+        opacity:1;
+        height:100%;
+        
+    }
+
+}

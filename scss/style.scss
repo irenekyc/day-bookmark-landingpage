@@ -1,0 +1,79 @@
+@import 'variables';
+@import 'utilities';
+@import 'hero';
+@import 'features';
+@import 'download';
+@import 'faq';
+@import 'join_us';
+
+
+body{
+    background: white;
+    color: $main-color;
+    font-family: $main-font;
+    font-size:12px;
+    line-height: 1.2;
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+a{
+    color: $main-color;
+    text-decoration: none;
+
+    &:hover{
+        color: $main-dark;
+    }
+}
+p{
+    font-size:0.9rem;
+}
+
+button{
+    outline:none;
+    border:none;
+    font-family: $main-font;
+}
+
+li{
+    list-style:none;
+}
+
+nav{
+    ul{
+        @media (min-width: 767px){
+            display:flex;
+        }
+    }
+}
+
+//Footer
+footer{
+    background: $main-dark;
+    color: white;
+    text-align:center;
+
+    ul{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size:1rem;
+    }
+    *{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    a{
+        color: white;
+    }
+}
+
+.attribution{
+    text-align:center;
+}
+
+ 

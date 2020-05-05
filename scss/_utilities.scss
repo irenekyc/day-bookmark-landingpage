@@ -1,0 +1,103 @@
+.hide-originally{
+    display:none;
+}
+.show-sm{
+    display:block;
+}
+
+@media (max-width: 767px){
+    .show-sm{
+        display:block;
+    }
+    .hide-sm{
+        display:none;
+       }
+}
+
+
+//Layout
+
+.wrapper{
+    padding: 2rem;
+}
+
+.wrapper-narrow{
+    padding: 0 12%;
+}
+@mixin ALIGNCENTER{
+    margin-right:auto;
+    margin-left:auto;
+}
+
+@for $i from 1 through 10 {
+    .py-#{$i}{ padding: 1rem*$i 0;}
+}
+@for $i from 1 through 10 {
+    .my-#{$i}{ margin: 1rem*$i 0;}
+}
+@for $i from 1 through 10 {
+    .p-#{$i}{ padding: 1rem*$i;}
+}
+
+@for $i from 1 through 10 {
+    .m-#{$i}{ margin: 1rem*$i;}
+}
+
+
+.flex-box{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//Text
+.heading-text{
+    color: $main-dark;
+}
+.large{
+    font-size: 1.8rem;
+}
+.lh-2{
+    line-height:1.6;
+}
+.lh-3{
+    line-height:2;
+}
+.lead{
+    font-size:1.3rem;
+}
+
+.title{
+    font-size:0.9rem;
+}
+
+.align-left{
+    text-align:left;
+}
+
+.emphasis{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+//BTN
+.btn{
+    cursor:pointer;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.6rem;
+    font-size:0.8rem;
+    font-weight:500;
+
+    &.btn-primary-blue{
+        background: $primary-blue;
+        color:white;
+    }
+    &.btn-light{
+        background: #dddddd;
+        color: $main-dark;
+    }
+    &.btn-primary-red{
+        background: $primary-red;
+        color:white;
+    }
+}
