@@ -5,13 +5,18 @@
     display:block;
 }
 
-@media (max-width: 767px){
+@media (max-width: 766px){
     .show-sm{
         display:block;
     }
     .hide-sm{
         display:none;
        }
+}
+@media (min-width:767px){
+    .show-sm{
+        display:none;
+    }
 }
 
 
