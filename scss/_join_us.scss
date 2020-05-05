@@ -5,6 +5,7 @@
 
     .email-field{
         width:100%;
+        @include ALIGNCENTER;
         height:40px;
         padding: 5px 8px;
         border-radius: 15px;
@@ -14,5 +15,25 @@
 
     .btn{
         width:100%;
+        max-width:400px;
+        @include ALIGNCENTER;
+    }
+
+    @media (min-width:1023px){
+        form {
+            width:50%;
+            max-width:600px;
+            @include ALIGNCENTER;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            .btn-primary-red{
+                margin-left:1rem;
+          
+                width:140px;
+                height:40px;
+            }
+    
+        }
     }
 }

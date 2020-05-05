@@ -2,15 +2,37 @@
 .download-section{
     text-align:center;
 
-    .download{
-        box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
-        border-radius:10px;
-        width: 80%;
-        @include ALIGNCENTER;
-
-        &.btn{
-            width:230px; 
+    .download-container{
+        .download{
+            box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+            border-radius:10px;
+            width: 80%;
+            max-width:350px;
+            @include ALIGNCENTER;
+            &.btn{
+                width:230px; 
+            }
         }
+        max-width: 900px;
+        @include ALIGNCENTER;
+        
+        @media (min-width:1023px){
+            display:flex;
+            justify-content: center;
 
+            .download{
+                width:282px;
+                margin-right:2rem;
+
+                &:nth-child(2){
+                    transform: translateY(1.5rem);
+                }
+                &:nth-child(3){
+                    transform: translateY(3rem);
+                }
+            }
+        }
+        
     }
+    
 }

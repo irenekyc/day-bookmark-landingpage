@@ -24,7 +24,7 @@ body{
 a{
     color: $main-color;
     text-decoration: none;
-
+    text-transform: uppercase;
     &:hover{
         color: $main-dark;
     }
@@ -57,63 +57,111 @@ nav{
     }
 
     .nav-links{
-        position:absolute;
-        top:70px;
-        left:0;
-        width:100%;
-        background: rgba(37, 43, 70, 0.9);
-        color:white;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size:1.5rem;
-        text-align:center;
-        padding: 2rem;
-        flex-direction: column;
-        justify-content: center;
-        height: calc(100vh - 70px);
-        ul{
-            flex:1;
-        }
-
-        li{
-            padding: 1rem;
-            border-bottom: 1px solid $main-color;
-        }
-
-        a{
-            color:white;
-        }
-        .btn-white{
+      @media (max-width:766px){
+            position:absolute;
+            top:70px;
+            left:0;
             width:100%;
-            background: transparent;
-            border-radius: 5px;
-            border: 2px solid white;
-            color: white;
+            background: rgba(37, 43, 70, 0.9);
+            color:white;
+            text-align:center;
+            letter-spacing: 2px;
+            padding: 2rem;
+            display:none;
             font-size:1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;;
-
-        }
-        .social-media{
-            img{
-                margin-right:1rem;
+            flex-direction: column;
+            justify-content: center;
+            height: calc(100vh - 70px);
+            ul{
+                flex:1;
+            }
+    
+            li{
+                padding: 1rem;
+                border-bottom: 1px solid $main-color;
+            }
+    
+            a{
+                color:white;
+            }
+            .btn-white{
+                width:100%;
+                background: transparent;
+                border-radius: 5px;
+                border: 2px solid white;
+                color: white;
+                font-size:1.5rem;
+                text-transform: uppercase;
+                letter-spacing: 2px;;
+    
+            }
+            .social-media{
+                img{
+                    margin-right:1rem;
+                }
             }
         }
+        @media (min-width:767px){
+            ul{
+                display:flex;
+                justify-content: space-between;
+                flex-direction:row;
+                align-items: center;
+                letter-spacing: 1px;
 
+                li{
+                    margin-left:1.5rem;
+                    margin-right:1rem;
+                }
+
+                button{
+                    margin-left:2rem;
+                    background: $primary-red;
+                    padding: 8px 17px;
+                    border-radius: 5px;;
+                    color:white;
+                    text-transform: uppercase;
+                    &:hover{
+                        background: transparent;
+                        border: 1px solid $primary-red;
+                        color: $primary-red;
+                    }
+                }
+
+                a{
+                    color: $main-dark;
+                    &:hover{
+                        color: $primary-red;
+                    }
+                }
+                
+
+            }
+            .social-media{ 
+                display:none;
+            }
+        } 
     }
 }
 
 
 //Footer
 footer{
+    @media (min-width:767px){
+     @include FLEX;
+    }
     background: $main-dark;
     color: white;
     text-align:center;
 
     ul{
-        text-transform: uppercase;
         letter-spacing: 2px;
         font-size:1rem;
+        @media (min-width:767px){
+            @include FLEX;
+            width: 300px;
+        }
+       
     }
     *{
         margin-top: 1.5rem;
@@ -122,6 +170,15 @@ footer{
 
     a{
         color: white;
+
+        &:hover{
+            color: $primary-red;
+        }
+    }
+    .social-media{
+        a{
+            margin-right:2rem;
+        }
     }
 }
 

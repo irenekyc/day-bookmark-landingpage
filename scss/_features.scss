@@ -3,19 +3,39 @@
     text-align: center;
 
     .feature-links{
+        ul{
+            @media (min-width:767px){
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 80%;
+                max-width:750px;
+                @include ALIGNCENTER;
+                border-bottom: 1px solid $main-color;
+                li{
+                    padding:2rem;
+                }
+            }
+        }
         li{
             padding-top: 1rem;
             padding-bottom:1rem;
             font-size:1rem;
-            border-bottom: 1px solid $main-color;
-            &:nth-child(1){
-                border-top: 1px solid $main-color;
+            @media (max-width:766px){
+                border-bottom: 1px solid $main-color;
+                &:nth-child(1){
+                    border-top: 1px solid $main-color;
+                }
             }
-
             position: relative;
             &:hover:after{
                 position:absolute;
-                width:50%;
+                @media (max-width:766px){
+                    width:50%;
+                }
+                @media (min-width:767px){
+                    width:100%;
+                }
                 bottom:-1px;
                 left:50%;
                 transform: translateX(-50%);
@@ -27,23 +47,63 @@
     }
 }
 
-.feature-image{
-    position:relative;
-    z-index:1;
+.feature{
+    @media (min-width:767px){
+        display:flex;
+        align-items: center;
 
-    img{
-        width:80%;
-        @include ALIGNCENTER;
+        &-text{
+            width:45%;
+            text-align: left;
+        }
     }
-    &:after{
-        position:absolute;
-        content:"";
-        width: 80%;
-        height: 65%;
-        background: $primary-blue;
-        border-radius: 0px 40px 40px 0px;
-        left:0;
-        bottom:1rem;
-        z-index:-1;
+    @media (min-width: 1023px){
+        .feature-text{
+            padding-left:4rem;
+            padding-right:10rem;
+        }
+        .feature-image{
+            padding: 5rem 0;
+        }
+    }
+    
+    .feature-image{
+        position:relative;
+        z-index:1;
+        flex:1;
+    
+        img{
+           width:80%;
+           max-width:550px;
+           @media (max-width:766px){
+            @include ALIGNCENTER;
+           }
+           @media (min-width:767px){
+               width:70%;
+               margin-right:0;
+               margin-left:auto;
+           }
+            
+        }
+       
+        &:after{
+            position:absolute;
+            content:"";
+            width: 80%;
+            height: 65%;
+            background: $primary-blue;
+            border-radius: 0px 30% 30% 0px;
+            left:0;
+            bottom:1rem;
+            z-index:-1;
+        }
+    }
+    .feature-btn{
+        @media (max-width:766px){
+            display:none;
+        }
+        text-align: center;
+        width:100px;
+        padding: 1rem;
     }
 }

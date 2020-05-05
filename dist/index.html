@@ -15,7 +15,7 @@
     <img class="logo" src="images/logo-bookmark.svg" alt="">
     <img class="show-sm btn" src="images/icon-hamburger.svg" id="open-menu" alt="">
     <img class="hide-originally btn" src="images/icon-close.svg" id="close-menu" alt="">
-    <div class="nav-links hide-originally">
+    <div class="nav-links">
     <ul>
       <li><a>Features</a></li>
       <li><a>Pricing</a></li>
@@ -50,10 +50,11 @@
     <!-----------------------------------FEATURE SECTION------------------------->
     <section class="features py-2">
       <div class="wrapper-narrow">
-      <h1 class="lead heading-text my-2"> Features </h1>
-      <p class="my-1 lh-3">Our aim is to make it quick and easy for you to access your favourite websites. 
-        Your bookmarks sync between your devices so you can access them on the go.</p>
-      
+        <div class="section-title">
+          <h1 class="lead heading-text my-2"> Features </h1>
+          <p class="my-1 lh-3">Our aim is to make it quick and easy for you to access your favourite websites. 
+            Your bookmarks sync between your devices so you can access them on the go.</p>
+        </div>
         <div class="feature-links p-1">
           <ul>
             <li><a>Simple Bookmarking</a></li>
@@ -64,13 +65,17 @@
       </div>
 
         <div class="feature py-1">
-          <div class="feature-image py-2">
+          <div class="feature-image py-3">
             <img id="feature-image" src="images/illustration-features-tab-1.svg" alt="">
           </div>
           <div class="feature-text p-2">
             <h1 id="feature-head" class="heading-text lead my-1">   Bookmark in one click</h1>
             <p id="feature-description" class="my-1 lh-2">  Organize your bookmarks however you like. Our simple drag-and-drop interface 
               gives you complete control over how you manage your favourite sites.</p>
+              <div class="feature-btn btn btn-primary-blue my-2"> More Info</div>
+          </div>
+          
+            
           </div>
         </div>
     </section>
@@ -83,12 +88,13 @@
         <p class="my-1 lh-2"> We’ve got more browsers in the pipeline. Please do let us know if you’ve 
           got a favourite you’d like us to prioritize.</p>
       </div>
+      <div class="download-container">
 
       <div class="download my-2 py-1">
         <img class="my-1" src="images/logo-chrome.svg" alt="">
         <h1 class="lead heading-text">Add to Chrome</h1>
         <p class="my-1">  Minimum version 62 </p>
-        <img src="images/bg-dots.svg" alt="">
+        <img class="dot" src="images/bg-dots.svg" alt="">
         <button class="btn btn-primary-blue my-1">  Add & Install Extension</button>
       </div>
     
@@ -96,7 +102,7 @@
         <img class="my-1" src="images/logo-firefox.svg" alt="">
         <h1 class="lead heading-text"> Add to Firefox</h1>
         <p class="my-1">  Minimum version 55 </p>
-        <img src="images/bg-dots.svg" alt="">
+        <img class="dot" src="images/bg-dots.svg" alt="">
         <button class="btn btn-primary-blue my-1">  Add & Install Extension</button>
       </div>
 
@@ -104,13 +110,15 @@
         <img class="my-1" src="images/logo-opera.svg" alt="">
         <h1 class="lead heading-text"> Add to Opera</h1>
         <p class="my-1">Minimum version 46 </p>
-        <img src="images/bg-dots.svg" alt="">
+        <img class="dot" src="images/bg-dots.svg" alt="">
         <button class="btn btn-primary-blue my-1"> Add & Install Extension</button>
       </div>
+
+    </div>
     </section>
 
     <!---------------------------------------FAQ SECTION--------------------------------->
-    <section class="faq py-2">
+    <section class="faq py-4">
       <div class="section-title p-2">
         <h1 class="heading-text lead my-1">Frequently Asked Questions</h1>
         <p class="lh-2">  Here are some of our FAQs. If you have any other questions you’d like 
@@ -172,24 +180,30 @@
 
     <!---------------------------------------JOIN US---------------------------------------->
 
-    <section class="join-us p-2">
+    <section class="join-us p-4">
       <div class="section-title my-1">
         <h3 class="emphasis my-1"> 35,000+ already joined</h3>
-        <h1 class="large my-1"> Stay up-to-date with what we’re doing</h1>
+        <h1 class="lead my-1"> Stay up-to-date with what we’re doing</h1>
       </div>
+      <form>
       <input class="email-field my-1" name="email" type="email">
       <button class="btn btn-primary-red"> Contact Us</button>
+    </form>
     </section>
 
   </main>
 <!------------------------------------FOOTER --------------------------------->
-  <footer class="py-3">
+  <footer class="p-3">
     <img src="images/logo-bookmark_white.svg">
     <ul class="footer-nav-links">
       <li> <a>Features</a></li>
       <li><a> Pricing</a></li>
       <li><a>Contact</a></li>
     </ul>
+    <div class="social-media hide-sm">
+      <a><img src="images/icon-facebook.svg"></a>
+      <a><img src="images/icon-twitter.svg"></a>
+    </div>
   </footer>
   <div>
     <p class="attribution">

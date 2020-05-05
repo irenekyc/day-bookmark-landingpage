@@ -4,6 +4,8 @@
     text-align:center;
 
     &-card{
+        max-width:525px;
+        @include ALIGNCENTER;
         input{
             visibility:hidden;
         }

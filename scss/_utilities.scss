@@ -61,6 +61,12 @@
 }
 .large{
     font-size: 1.8rem;
+    @media (min-width:1023px){
+        font-size:2.4rem;
+    }
+    @media (min-width:1280px){
+        font-size:3rem;
+    }
 }
 .lh-2{
     line-height:1.6;
@@ -70,6 +76,9 @@
 }
 .lead{
     font-size:1.3rem;
+    @media (min-width:1023px){
+        font-size:1.8rem;
+    }
 }
 
 .title{
@@ -105,4 +114,18 @@
         background: $primary-red;
         color:white;
     }
+}
+
+.section-title{
+    @media (min-width:767px){
+        width:70%;
+        max-width:550px;
+        @include ALIGNCENTER;
+    }
+}
+
+@mixin FLEX{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
