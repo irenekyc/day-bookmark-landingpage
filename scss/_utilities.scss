@@ -105,14 +105,32 @@
     &.btn-primary-blue{
         background: $primary-blue;
         color:white;
+        margin-right:1rem;
+
+        &:hover{
+            background:transparent;
+            border: 1px solid $primary-blue;
+            color:$primary-blue;
+        }
     }
     &.btn-light{
         background: #dddddd;
         color: $main-dark;
+        margin-right:1rem;
+        &:hover{
+            background:transparent;
+            border: 1px solid $main-dark;
+        }
     }
     &.btn-primary-red{
         background: $primary-red;
         color:white;
+
+        &:hover{
+            background:white;
+            border: 1px solid $primary-red;
+            color: $primary-red;
+        }
     }
 }
 
