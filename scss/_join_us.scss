@@ -7,7 +7,6 @@
         width:100%;
         max-width:400px;
         @include ALIGNCENTER;
-        position: relative;
         
         input{
             height:40px;
@@ -15,12 +14,22 @@
             padding: 5px 8px;
             border-radius: 15px;
             border:none;
-            outline:0; 
-            position:relative;
+            outline:0;   
+        }
+        &:after{
+            content:attr(data-error);
+            color: $primary-red;
+            text-decoration: italic;
+            display:block;
+            text-align:left;
+            padding: 0 20px;
+            font-weight:600;
+          
         }
         #email:invalid{
             border: 2px solid $primary-red;
     }
+    
 
     .warning{
         position:absolute;
