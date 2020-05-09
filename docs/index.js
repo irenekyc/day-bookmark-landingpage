@@ -67,3 +67,16 @@ featureSelect.addEventListener('click', (e)=>{
     
     
 })
+
+const email = document.getElementById('email')
+
+email.addEventListener('input', (e)=>{
+    if (email.checkValidity()){
+        document.querySelector('.email-field').removeAttribute('data-error')
+    } else if(!email.checkValidity()){
+        const att = document.createAttribute("data-error")
+        att.value = "Whoops, make sure it's an email"
+        document.querySelector('.email-field').setAttributeNode(att)
+    }
+
+})
